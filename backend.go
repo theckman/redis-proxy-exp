@@ -66,7 +66,7 @@ func getKey(r *http.Request) string {
 
 func (b *Backend) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	// set the Content-Type to text/plain
-	w.Header().Add("content-type", "text/plain")
+	w.Header().Add("content-type", "text/plain; charset=utf-8")
 
 	// get the key from the query params
 	// will be "" if the expected key is not present

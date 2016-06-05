@@ -9,7 +9,7 @@ import (
 	"github.com/gorilla/mux"
 )
 
-const fciVersion = "0.0.1"
+const fciVersion = "0.0.2"
 
 func buildMux(b *Backend) *mux.Router {
 	router := mux.NewRouter()
